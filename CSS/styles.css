@@ -1,0 +1,724 @@
+/*Settings utilized across the whole website*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #9DA4AB;
+}
+
+button > * {
+	pointer-events: none;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*All styles for small screen*/
+
+/*Header Styles*/
+header {
+	height: auto;
+	background: #3C72A3;
+	min-height: 5vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.navUl {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	width: 20%;
+}
+
+#headerNav li :hover {
+	background-color: #9eb9d1;
+	border-radius: 8px;
+}
+
+#headerNav li a {
+	display: block;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav li #navActive {
+	color: white;
+}
+
+.Title {
+	font-size: 30px;
+	text-align: center;
+}
+
+.navSearchPlacement {
+	display: flex;
+	justify-content: center;
+}
+
+.navSearch {
+	width: 100%;
+	text-align: center;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Footer Styles*/
+footer {
+	display: flex;
+	width: 100%;
+	height: auto;
+	min-height: 5vh;
+	background: #5e6267;
+	text-align: center;
+}
+
+footer nav {
+	flex: 1;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footerNav li:hover {
+	background-color: #4b4e52;
+	border-radius: 8px;
+}
+
+footer nav li a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.navActiveFooter {
+	color: #9DA4AB;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Main Area base styles*/
+main {
+	height: auto;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.mainArea {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.mainTitle {
+	padding: 5vh 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Home page Styles*/
+.mainIntro {
+	text-align: left;
+	padding: 0 5vh;
+}
+
+.mainPrompt {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mainPromptText {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.rightArrowPosition {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.mainRightArrow {
+	display: none;
+}
+
+.gameDirectoryButton {
+	border: 2px solid black;
+	border-radius: 6px;
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.mainReccomend {
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 2vh;
+}
+
+.reccomendedGames {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.reccGamesText{
+	color: blue;
+	text-decoration: underline;
+}
+
+.reccGamesArea {
+	flex: 1;
+	padding: 2vh 0;
+}
+
+div.reccGamesArea:hover {
+	background-color: #7e8389;
+}
+
+.homeGameImage {
+	width: 300px;
+	height: 300px;
+}
+
+.credit {
+	text-align: center;
+	width: 100%;
+	font-size: 12px;
+	color:dimgray;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Directory page Styles*/
+.direcSearch {
+	align-self: center;
+	width: 80%;
+	display: inline;
+}
+
+.direcSearchInput {
+	width: 80%;
+	align-self: center;
+	border-radius: 8px;
+}
+
+form.direcSearch [type=text] {
+	padding: 5px 16px;
+	font-size: 14px;
+	float: left;
+	border-color: #9DA4AB;
+}
+
+form.direcSearch button {
+	border-radius: 8px;
+	padding: 5px 0;
+	width: 20%;
+	float: left;
+	color: #D3D3D3;
+	background-color: #3C72A3;
+	border-color: #3C72A3;
+	cursor: pointer;
+}
+
+form.direcSearch button:hover {
+	background-color: #366793;
+	border-color: #366793;
+}
+
+.direcInfo {
+	padding: 5px 10%;
+	font-size: 16px;
+	text-align: center;
+}
+
+.direcMenu {
+	width:100%;
+	position: relative;
+	display: inline-block;
+}
+
+.direcMenuButton {
+	display: block;
+	width: 100%;
+	background-color: #3C72A3;
+	box-shadow: none;
+	cursor: pointer;
+	border: 2px solid #9DA4AB;;
+}
+
+.direcMenuButton:not(:last-child ){
+	border-bottom: none;
+}
+
+.direcMenuButton:hover, .direcMenuButton:focus {
+	background-color: #366793;
+}
+
+.direcMenu p {
+	float: left;
+	padding: 15px 5px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.direcMenu i {
+	float: right;
+	padding: 15px 5%;
+}
+
+.direcMenuContent {
+	display: none;
+	flex-direction: column;
+	min-width: 100%;
+}
+
+.show {
+	display:flex;
+}
+
+.direcResultsList {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+}
+
+.direcResultsList li {
+	text-align: center;
+	flex: 1;
+	align-self: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.direcResultsList li a {
+	display: block;
+	color: blue;
+	text-decoration: underline;
+	font-size: 28px;
+	margin: 20px 0;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Game page Styles*/
+.gameboardText {
+	display: block;
+}
+
+span {
+	display: inline-block;
+	margin: 5vh 5vw;
+	font-weight: bold;
+}
+
+.smallChess {
+	display: block;
+	margin-bottom: 5vh;
+}
+
+.smallChess a {
+	color: blue;
+	text-decoration: underline;
+}
+
+.mediumChess {
+	display: none;
+	padding-right: 5vw;
+}
+
+.bigChess {
+	display: none;
+	padding-right: 5vw;
+}
+
+.chessViewer {
+	width: 460px;
+	height: 230px;
+	border: 1px solid black;
+}
+
+.gameText {
+	text-align: left;
+	padding: 0 5vh 5px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*FAQ's page styles*/
+.faqQuestion {
+	text-align: left;
+	margin: 0 5%;
+}
+
+.faqAnswer {
+	text-align: left;
+	margin: 5px 5%;
+}
+
+.faqLink {
+	display: inline;
+	color: blue;
+	text-decoration: underline;
+	cursor: auto;
+	font-size: 16px;
+}
+
+.faqVideoBox {
+	display: flex;
+	flex-direction: column;
+}
+
+.faqVideoBox iframe {
+	margin: 5%;
+	width: 90vw;
+	height: 50.625vw;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Contact Us page Styles*/
+.contactQuestions {
+	text-align: left;
+	margin: 2% 5%;
+}
+
+.contactText {
+	text-align: left;
+	margin: 0 5%;
+}
+
+.Subscription {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.subscriptionEmail {
+	width: 90%;
+	justify-content: center;
+}
+
+.subscriptionEmail label {
+	float: left;
+	font-weight: bold;
+}
+
+.subscriptionEmail input {
+	width: 80%;
+}
+
+.subscriptionButton {
+	width: 30%;
+	margin-top: 5px;
+	text-align: center;
+	border-radius: 4px;
+	border-color: #9DA4AB;
+	padding: 5px;
+}
+
+.gameDescription {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	margin: 0 5%;
+}
+
+.gameDescription input {
+	margin: 2px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.gameCode {
+	width: 90%;
+	margin: 0 5%;
+	height: 200px;
+}
+
+.suggestionButton {
+	flex: 1;
+	width: 90%;
+	padding: 5px;
+	text-align: center;
+	border-radius: 4px;
+	border-color: #9DA4AB;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*All styles for medium screen*/
+@media only screen and (min-width: 600px) {	
+	/*Header styles*/
+	header {
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+	}
+	
+	header p {
+		flex-grow: 1;
+	}
+
+	header nav {
+		flex-grow: 2;
+	}
+
+	header div {
+		flex-grow: 1;
+	}
+
+	.navSearch {
+		width: 80%;
+	}
+	/*-----------------------------------*/
+
+	/*Footer style*/
+	footer nav li {
+		width: 10%;
+	}
+	/*-----------------------------------*/
+
+	/*Home page styles*/
+	.mainPrompt {
+		flex-direction: row;
+		min-height: 15vh;
+	}
+	
+	.mainPromptTextPosition {
+		width: 50%;
+	}
+
+	.mainPromptText {
+		float: right;
+		font-size: 14px;
+	}
+	
+	.mainRightArrow {
+		display: block;
+		width: 50px;
+		height: 50px;
+	}
+
+	.gameDirectoryButtonPosition{
+		width: 50%;
+	}
+
+	.gameDirectoryButton {
+		float: left;
+	}
+
+	.reccomendedGames {
+		flex-direction: row;
+	}
+
+	.homeGameImage {
+		height: 200px;
+		width: 200px;
+	}
+
+	.reccGamesText {
+		font-size: 13px;
+	}
+	/*-----------------------------------*/
+	
+	/*Directory page styles*/
+	form.direcSearch [type=text] {
+		font-size: 17px;
+	}
+	
+	form.direcSearch button {
+		padding: 7px 0;
+	}
+
+	.direcInfo {
+		font-size: 17px;
+	}
+	
+	.direcMenu {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	.direcMenu p {
+		font-size: 18px;
+	}
+
+	.direcMenu i {
+		padding-right: 4%;
+	}
+
+	.direcMenuContent {
+		flex-direction: row;
+	}
+	/*-----------------------------------*/
+	
+	/* Game page styles*/
+	.gameText {
+		font-size: 18px;
+	}
+
+	.smallChess {
+		display: none;
+	}
+
+	.mediumChess {
+		display: block;
+		float: right;
+		margin-left: 2vh;
+		margin-bottom: 2vh;
+	}
+	/*-----------------------------------*/
+
+	/*FAQ's page styles*/
+	
+	.faqVideoBox {
+		flex-direction: row;
+	}
+	
+	.faqVideoBox iframe {
+		width: 40vw;
+		height: 22.5vw;
+	}
+	/*-----------------------------------*/
+
+	/*Contact Us page styles*/
+	.Subscription {
+		flex-direction: row;
+		width: 90%;
+		align-items: baseline;
+		margin: 0 5%;
+	}
+
+	.subscriptionEmail input{
+		width: 90%;
+	}
+
+	.gameDescription {
+		flex-direction: row;
+	}
+	
+	.gameDescription input{
+		margin: 2px 5px 10px;
+	}
+
+	.gameDescription input:first-child {
+		margin-left : 0;
+	}
+
+	.gameDescription input:last-child {
+		margin-right: 0;
+	}
+
+	#Year {
+		width: 10%;
+	}
+
+	#playersSuggestion {
+		width: 50%;
+	}
+
+	#Tournament {
+		width: 40%;
+	}
+
+	.gameCode {
+		height: 150px;
+	}
+
+	.suggestionButton {
+		display: block;
+		float: right;
+		width: 20%;
+		margin-right: 5%;
+	}
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*All styles for big screen*/
+
+@media only screen and (min-width: 800px) {
+	/*Header styles*/
+	header nav {
+		flex-grow: 2.5;
+	}
+	
+	#headerNav li a {
+		font-size: 18px;
+	}
+	/*-----------------------------------*/
+
+	/*Footer styles*/
+	footer nav li {
+		width: 8%;
+	}
+
+	footer nav li a{
+		font-size: 18px;
+	}
+	/*------------------------------------*/
+	
+	/*Home page styles*/
+	.mainPromptText {
+		font-size: 18px;
+	}
+
+	.mainReccomend {
+		font-size: 18px;
+	}
+	
+	.reccGamesText {
+		font-size: 16px;
+	}
+
+	.gameDirectoryButton {
+		font-size: 18px;
+	}
+	/*------------------------------------*/
+	
+	/*Directory page Styles*/
+	.direcInfo {
+		font-size: 15px;
+	}
+
+	.direcMenu p{
+		font-size: 20px;
+	}
+	
+	.direcMenu i {
+		padding-right: 2%;
+	}
+	/*------------------------------------*/
+
+	/*Game page Styles*/
+	.gameText {
+		font-size: 19px;
+	}
+
+	.mediumChess {
+		display: none;
+	}
+	
+	.bigChess {
+		display: block;
+		float: right;
+		margin-left: 5vh;
+		margin-bottom: 5vh;
+	}
+
+	.chessViewer {
+		width: 590px;
+		height: 365px;
+	}
+}

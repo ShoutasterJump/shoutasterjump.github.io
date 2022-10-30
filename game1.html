@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<HTML>
+<Head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ChessArchive</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="JavaScript/script.js" type="text/javascript"></script>
+	
+</Head>
+<Body>
+	
+	<!--Header-->
+	<header>
+		<p class="Title">ChessArchive</p>
+		<nav class="navUl" id="headerNav">
+			<li><a href="home.html">Home</a>
+			<li><a href="directory.html">Directory</a>
+			<li><a>News</a>
+			<li><a href="faqs.html">FAQ's</a>
+			<li><a href="contacts.html">Contact Us</a>
+		</nav>
+		<!--Search bar Not Yet Implemented-->	
+		<div>
+			<input class="navSearch" type="text" placeholder="Search our Site here">
+		</div>
+	</header>
+	
+	<!--Main area for content-->
+	<main>
+		<div class="mainArea">
+			<h2 class="mainTitle">Vladimir Kramnik - Vishy Anand: World Championship match (game 3), Bonn 2008<br>
+			Queen's Gambit Declined, Semi-Slav Defence</h2>
+			<!--Displays the game in three different ways-->
+			<div class="gameboardText">
+				<!--Small screens = Link to new page-->
+				<div class="smallChess">
+					<form id="cwvfm_1666616096" method="post" action="http://www.caissa.com/htbin/chessview?size=s" target="cwvpu_1666616096">
+						<input type="hidden" id="cwvpd_1666616096" name="data" value="" />
+					</form>
+					<a onclick="smallChessScript()">Click here to view the PGN</a>
+						<div id="cwvpg_1666616096" style="display:none">
+							[Event "Anand - Kramnik World Championship Match"]<br />[Site "Bonn GER"]<br />[Date "2008.10.17"]<br />[Round "3"]<br />[White "Vladimir Kramnik"]<br />[Black "Viswanathan Anand"]<br />[Result "0-1"]<br />[WhiteELO "2685"]<br />[BlackELO "2063"]<br />[EventDate "2008.10.14"]<br />[ECO "D49"]<br />[WhiteElo "?"]<br />[BlackElo "?"]<br />[PlyCount "82"]<br /><br />1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8.<br />Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 axb5 12. exf6 gxf6 13. O-O Qb6 14. Qe2<br />Bb7 15. Bxb5 Bd6 16. Rd1 Rg8 17. g3 Rg4 18. Bf4 Bxf4 19. Nxd4 h5 20. Nxe6<br />fxe6 21. Rxd7 Kf8 22. Qd3 Rg7 23. Rxg7 Kxg7 24. gxf4 Rd8 25. Qe2 Kh6 26. Kf1<br />Rg8 27. a4 Bg2+ 28. Ke1 Bh3 29. Ra3 Rg1+ 30. Kd2 Qd4+ 31. Kc2 Bg4 32. f3 Bf5+<br />33. Bd3 Bh3 34. a5 Rg2 35. a6 Rxe2+ 36. Bxe2 Bf5+ 37. Kb3 Qe3+ 38. Ka2 Qxe2<br />39. a7 Qc4+ 40. Ka1 Qf1+ 41. Ka2 Bb1+ 0-1
+						</div>
+				</div>
+				<!--Medium screens = Smaller gameboard viewer-->
+				<div class="mediumChess">
+					<div class="chessViewer">
+						<iframe id="cwvif_1666615538" name="cwvif_1666615538" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+						<form id="cwvfm_1666615538" method="post" action="http://www.caissa.com/htbin/chessview?size=s" target="cwvif_1666615538">
+							<input type="hidden" id="cwvpd_1666615538" name="data" value="" />
+						</form>
+					</div>
+					<div id="cwvpg_1666615538" style="display:none">
+						[Event "Anand - Kramnik World Championship Match"]<br />[Site "Bonn GER"]<br />[Date "2008.10.17"]<br />[Round "3"]<br />[White "Vladimir Kramnik"]<br />[Black "Viswanathan Anand"]<br />[Result "0-1"]<br />[WhiteELO "2685"]<br />[BlackELO "2063"]<br />[EventDate "2008.10.14"]<br />[ECO "D49"]<br />[WhiteElo "?"]<br />[BlackElo "?"]<br />[PlyCount "82"]<br /><br />1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8.<br />Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 axb5 12. exf6 gxf6 13. O-O Qb6 14. Qe2<br />Bb7 15. Bxb5 Bd6 16. Rd1 Rg8 17. g3 Rg4 18. Bf4 Bxf4 19. Nxd4 h5 20. Nxe6<br />fxe6 21. Rxd7 Kf8 22. Qd3 Rg7 23. Rxg7 Kxg7 24. gxf4 Rd8 25. Qe2 Kh6 26. Kf1<br />Rg8 27. a4 Bg2+ 28. Ke1 Bh3 29. Ra3 Rg1+ 30. Kd2 Qd4+ 31. Kc2 Bg4 32. f3 Bf5+<br />33. Bd3 Bh3 34. a5 Rg2 35. a6 Rxe2+ 36. Bxe2 Bf5+ 37. Kb3 Qe3+ 38. Ka2 Qxe2<br />39. a7 Qc4+ 40. Ka1 Qf1+ 41. Ka2 Bb1+ 0-1
+					</div>
+					<script>mediumChessScript();</script>
+				</div>
+				<!--Big screens = Larger gameboard viewer-->
+				<div class="bigChess">
+					<div class="chessViewer">
+						<iframe id="cwvif_1666614752" name="cwvif_1666614752" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+						<form id="cwvfm_1666614752" method="post" action="http://www.caissa.com/htbin/chessview" target="cwvif_1666614752">
+							<input type="hidden" id="cwvpd_1666614752" name="data" value="" />
+						</form>
+					</div>
+					<div id="cwvpg_1666614752" style="display:none">
+						[Event "Anand - Kramnik World Championship Match"]<br />[Site "Bonn GER"]<br />[Date "2008.10.17"]<br />[Round "3"]<br />[White "Vladimir Kramnik"]<br />[Black "Viswanathan Anand"]<br />[Result "0-1"]<br />[WhiteELO "2685"]<br />[BlackELO "2063"]<br />[EventDate "2008.10.14"]<br />[ECO "D49"]<br />[WhiteElo "?"]<br />[BlackElo "?"]<br />[PlyCount "82"]<br /><br />1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8.<br />Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 axb5 12. exf6 gxf6 13. O-O Qb6 14. Qe2<br />Bb7 15. Bxb5 Bd6 16. Rd1 Rg8 17. g3 Rg4 18. Bf4 Bxf4 19. Nxd4 h5 20. Nxe6<br />fxe6 21. Rxd7 Kf8 22. Qd3 Rg7 23. Rxg7 Kxg7 24. gxf4 Rd8 25. Qe2 Kh6 26. Kf1<br />Rg8 27. a4 Bg2+ 28. Ke1 Bh3 29. Ra3 Rg1+ 30. Kd2 Qd4+ 31. Kc2 Bg4 32. f3 Bf5+<br />33. Bd3 Bh3 34. a5 Rg2 35. a6 Rxe2+ 36. Bxe2 Bf5+ 37. Kb3 Qe3+ 38. Ka2 Qxe2<br />39. a7 Qc4+ 40. Ka1 Qf1+ 41. Ka2 Bb1+ 0-1
+					</div>
+					<script>bigChessScript();</script>
+				</div>
+				<!--Game Analysis-->
+				<p class="gameText"> This match was the final act in the process to reunify the World Championship. Anand had won the World Championship
+				tournament in 2007, and Kramnik was entitled to a rematch. This was the first of two games that Anand won as Black in
+				same sharp line of the Meran. Kramnik attempts to refute a new idea over the board, but runs into serious counterplay.
+				Anand rejects a drawish line and plays on two pawns down, with Kramnik's king on the run.<br>
+				<span>
+					1 d4&emsp;d5<br>
+					2 c4&emsp;c6<br>
+					3 N43&emsp;Nf6<br>
+					4 Nc3&emsp;e6<br>
+				</span><br>
+				Anand is willing to face the Anti-Moscow Gambit.<br>
+				<span>
+					5 e3&emsp;Nbd7<br>
+					6 Bd3&emsp;dxc4<br>
+					7 Bxe4&emsp;b5<br>
+					8 Bd3&emsp;a6<br>
+					9 e4&emsp;c5<br>
+					10 e5&emsp;cxd4<br>
+					11 Nxb5<br>
+				</span><br>
+				This is one of the best-established lines of the Classical Meran, named the Blumenfeld Attack. The move itself is an
+				exmaple of a desperado, in that a piece that is going to be taken anyway tries to sell its life as dearly as possible.<br>
+				<span>
+					11 ...&emsp;axb5<br>
+				</span><br>
+				11...Nxe5 is the other main line, while 11...Ng4 has also been investigated.<br>
+				<span>
+					12 exf6&emsp;gxf6<br>
+					13 O-O4&emsp;Qb6<br>
+					14 Qe2<br>
+				</span><br>
+				In this position, the discussion previously had always been about how Black should defend his pawn. Anand's next move
+				opened a new page in Meran theory.<br>
+				<span>
+					14 ...&emsp;Bb7!?<br>
+				</span><br>
+				He simply abandons the pawn to its fate, and seeks counterplay against the white king. With the long diagonal and the
+				conveniently open g-file converging on g2, this is a tempting idea. This concept is not completely new, but had not been
+				tried at a high level, nor had the critical lines been tested. Oddly, Anand and Kasimdzhanov (one of his seconds for this
+				match) both had the same idea independently, as they discovered at the first preparation session prior to the Bronn 2008
+				match.<br>
+				<span>
+					15 Bxb5<br>
+				</span><br>
+				Kramnik takes up the gauntlet. 15 Be4 is more compromising, though 14 Bf4 has been investigated with some success in later 
+				games.<br>
+				<span>
+					15 ...&emsp;Bd6<br>
+				</span><br>
+				Kramnik made it clear he did not believe Black's idea to be correct and, good as his word, he invited a repeat of the 
+				opening line at the next opportunity. Anand deviated here with 15...Rg8!?. Another extremely sharp and tense struggle 
+				ensued, with Kramnik running short of time and blundering into a devilish snare: 16 Bf4 Bd6 17 Bg3 f5 18 Rfc1 f4 19 
+				Bh4 Be7! 20 a4 Bxh4 21 Nxf4 Ke7 22 Ra3?! Rac8 23 Rxc8 Rxc8 24 Ra1 Qc5 25 Qg4 Qe5 26 Nf3 Qf6 27 Re1 Rc5 28 b4 Rc3 29 
+				Nxd4?? Qxd4 30 Rd1 Nf6 31 Rxd4 Nxg4 32 Rd7+ Kf6 33 Rxb7 Rc1+ 34 Bf1 Ne3!! 35 fxe3 fxe3 0-1 Kramnik-Anand, World 
+				Championship match (game 5), Bonn 2008. That left Anand with a commanding lead in the match, virtually ensuring a 
+				successful defence of his title despite a strong performance by Kramnik in the later games.<br>
+				Israeli grandmaster Alon Greenfeld put forward the intriguing view that Anand had prepared both 15...Bd6 and 15...Rg8 
+				before the match, and the order in which he played them was based on maintaining maximum surprise value. That is, 15...
+				Rg8 can be met by 16 Bf4 and Bg3, which logically suggests 15...Bd6 as a likely "improvement", as it prevents this 
+				manoeuvre. Therefore he played the "improvement" first.<br>
+				<span>
+					16 Rd1<br>
+				</span><br>
+				Once more Kramnik chooses the most critical reply. Against 16 Nxd4 Anand and his team had worked out a spectacular 
+				drawing line: 16...Qxd4 (16...Rg8 is considered worse due to 17 g3, but even this may not be clear) 17 Rd1 Bxh2+ 18 Kxh2 
+				Qh4+ 19 Kg1 Bxg2 20 Bxd7+ Ke7 21 Kxg2 Rhg8+ 22 Kf3 Qh5+ 23 Ke3 Qc5+ 24 Kd2 Rad8! 25 Rf1 (25 Qf1 Rxd7+ 26 Ke1 Rxd1+ 27 
+				Kxd1 Qh5+ 29 Ke1 Qe5+ 29 Be3 f5 also gives White nothing) 25...Rxd7+ 26 Ke1 Rc8! 27 Qe3 Qa5+ 28 Bd2 Rxd2 29 Qxd2 Qe5+ 
+				30 Qe2 Qa5+ with perpetual check.<br>
+				<span>
+					16 ...&emsp;Rg8<br>
+					17 g3&emsp;Rg4!<br>
+				</span><br>
+				This move had not been played before, and is based on some fiendish tactical ideas.<br>
+				<span>
+					18 Bf4!<br>
+				</span><br>
+				Kramnik plays his part in making this a great game. Despite clearly being caught out by a major piece of preparation, 
+				he fights for the advantage with vigor. 18 Nd2 is the more obvious move, and it is only with considerable imagination 
+				(Or the assistance of an analysis engine) that one can foresee Black's reply: 18...Ke7! (countering the threat of Nc4 
+				and perparing to supply a second rook to the kingside attack) 19 Bxd7 (after 19 Qxg4 Qxb5 White's extra exchange will 
+				be scant reward for the hopelessly weak light squares around his king) 19...Rag8 20 Bb5 d3! (20...Rxg3+ 21 hxg3 Rxg3+ 
+				22 Kf1 Bg2+ 23 Ke1 Re3 24 Nb3 is less clear) 21 Qxd3 Rxg3+ 22 hxg3 Rxg3+ 23 Kf1 Rxd3 24 Bxd3 Qd4 with a draw in lines 
+				like 25 Nc4 Bb4 26 a3 Bg2+ 27 Kxg2 Qg4+ or 25 Nb3 Qd5 26 Ke1 Bb4+ 27 Bd2 Qh1+ 28 Ke2 Qf3+.<br>
+				<span>
+					18 ...&emsp;Bxf4<br>
+					19 Nxd4<br>
+				</span><br>
+				Setting the board on firewith threats against g4, e6 and d7. However, it objectively offers very little, and this may 
+				have been where Kramnik intended to vary in game 5 if Anand had allowed him to. 19 Rxd4!? makes it harder for Black to 
+				justify his play:<br>
+				&emsp;1) 19...Kf8 20 Bxd7 (20 Rxf4 Rxf4 21 gxf4 Nc5 offers white less) 20...Rd8 21 Rad1 Rxd7 22 Rxd7 Rxg3 23 hxg3 Rxg3+ 
+				24 Kh2 Bxf3 (Black can't keep attacking chances by 24...Rxf3? because his own king is in greater danger: 25 Rd8+ Kg7 26 
+				Rg1+ Kh6 27 Qd2+ Kh5 28 Rd4 Qc7+ 29 Rg3 Rxg3 30 fxg3) 25 Qe3 Rg2+ 26 Kh3 Qxe3 27 fxe3 Rxb2 with an ending where Black 
+				has two pawns for the exchange but White has a major asset in the form of his passed a-pawn. However, Black's pieces are 
+				well-placed and his own pawns mobile, so he should probablt hold the position.<br>
+				&emsp;2) 19...O-O-O 20 Rad1 Bd5 and now:<br>
+				&emsp;&emsp;2a) 21 Bc4 Bb7 (21...Bc6 avoids a repetition, but after 22 Rxf4 Rxf4 23 gxf4 Rg8+ 24 Kf1 Black's counterplay 
+				is less well defined) 22 Rxf4 (22 Bb5 repeats) 22...Rxf4 23 gxf4 Qc6 and Black's play on the long diagonal is hard to 
+				shake off.<br>
+				&emsp;&emsp;2b) 21 Rb4 Kc7 22 a3 Be3! 23 Rxg4 Bxf3 24 Rc4+ (24 Qxf3 Ne5 offers White less) 24...Bc5 25 Qxf3 Ne5 26 Qh5 
+				Rxd1+ 27 Qxd1 Qxb5 28 Rc3 Nc6 leads to a complex ending. White's queenside pawns are a potent force, but it is hard to 
+				see White advancing them all the way to promotion withour Black's queen, bishop, knight and pawn finding counterplay against 
+				White's king.<br>
+				<span>
+					19 ...&emsp;h5!<br>
+				</span><br>
+				Now it is Anand who will decide whether to take a draw or play on. 19...Rg6 was the alternative:<br>
+				&emsp;1) Not 20 Bxd7+ Kxd7 21 Nxe6+ Bd6.<br>
+				&emsp;2) 20 a4 is possible, when the sample line 20...Rd8 21 a5 Qc5 22 a6 Ba8 23 Nxe6 fxe6 24 Rxd7 Rxd7 25 Qxe6+ Kf8 26 
+				Qxd7 Bxg3 27 Qd8+ Kg7 28 Qd7+ is yet another variation destined to lead to a draw.<br>
+				&emsp;3) 20 Nxe6 fxe6 21 Rxd7 Kf8 22 Bd3 Be5 23 Bxg6 hxg6 24 Qc4 Ke8 25 Rh7 Bd4! 26 Rxb7 Bxf2! 27 Kf1 Qxb7 28 Qxe6+ Kf8 
+				29 Qxf6+ Kg8 (a line given by Anand's principal assistant, Peter Heine Nielsen) and White must take a draw.<br>
+				<span>
+					20 Nxe6&emsp;fxe6<br>
+					21 Rxd7&emsp;Kf8<br>
+					22 Qd3&emsp; Rg7!<br>
+				</span><br>
+				Anand elects to play on. 22...Bxg3 23 hxg3 h4 24 Rd6 Qc5 25 b4 Qe5 26 Rd8+ Rxd8 27 Qxd8+ Kg7 28 Qe7+ Kh6 29 Qf8+ Kg7 30 
+				Qh8+ Rh7 31 Qf8+ Rg7 is a draw. In match play, a comfortable draw as Black is a significant success, so choosing instead 
+				to play for a win in an unclear position two pawns down is a gutsy decision by Anand. Two factors no doubt came into play: 
+				firstly, he felt that his chances in a tactical shoot-out were good - there is little scope for Kramnik's famed sense for 
+				positional nuances to come into play; and secondly, how often could he expect to reach a position with Kramnik's king on 
+				the run even in the games where he had White? In a short match, one must make the most of all chances, and a win as Black 
+				is of especial value.<br>
+				<span>
+					23 Rxg7&emsp;Kxg7<br>
+					24 gxf4&emsp;Rd8<br>
+					25 Qe2&emsp;Kh6!<br>
+				</span><br>
+				Black's king is much the safer of the two. Meanwhile White's queenside pawns will not be a threat in the near future.<br>
+				<span>
+					26 Kf1&emsp;Rg8<br>
+					27 a4&emsp;Bg2+<br>
+					28 Ke1&emsp;Bh3<br>
+					29 Ra3?!<br>
+				</span><br>
+				Running low on time, Kramnik starts to go astray. 29 Rd1! Bg4 (29...Rg1+ 30 Kd2 Rg2 31 Qe3 Rxf2+ 32 Be2 Rxe2+ 33 Qxe2 
+				Bg4 34 Qd3 Qxb2+ 35 Qc2 Qb4+ 36 Kc1 Qa3+ 37 Kd2 Qd6+ 38 Kc1 is drawn, the key point being 38...Bxd1 39 Qxd1 Qxf4+?? 
+				40 Qd2 and the a pawn promotes; 29...Bf5 also maintains sufficient compensation) 30 Qe3! Qxe3+ 31 fxe3 Bxd1 32 Kxd1 
+				leads to an ending where White's queenside pawns come into their own and insure White against loss.<br>
+				<span>
+					29 ...&emsp;Rg1+<br>
+					30 Kd2&emsp;Qd4+<br>
+					31 Kc2&emsp;Bg4?<br>
+				</span><br>
+				31...Bf5+! 32 Rd3 (32 Kb3 Rc1! 33 a5 Qd5+ 34 Bc4 Qb7+ 35 Ka4 {35 Bb5? Bc2+ 36 Ka2 Qh1 mates} 35..Rc2! is likely a win 
+				for Black) 32...Rg4 leaves White in difficulties.<br>
+				<span>
+					32 f3?<br>
+				</span><br>
+				32 Rd3! Bf5 33 Kb3 Bxd3 34 Qxd3 and White will salvage a draw, either due to the strength of his queenside pawns or by 
+				counterplay against the black king.<br>
+				<span>
+					32 ...&emsp;Bf5+<br>
+					33 Bd3?<br>
+				</span><br>
+				33 Kb3 Rc1! 34 a5 Qd5+ 35 Bc4 Qb7+ 36 Bb5 (Black lacks ...Qh1 here; 36 Ka4 is again answered by 36...Rc2) 36...Rc2 37 
+				a6 Qb6 38 Qf1 Qe3+ 39 Ka2 Qd2 40 Qb1 Rc1 and Black wins.<br>
+				<span>
+					33 ...&emsp;Bh3?<br>
+				</span><br>
+				Good enough, but missing an immediate win by the straightforward 33...Bxd3+ 34 Rxd3 (34 Qxd3 Rg2+ 35 Kc1 Qxb2+ 36 Kd1 
+				Rg1+ mates) 34...Qc4+, when White is either mated or loses his queen.<br>
+				<span>
+					34 a5?!<br>
+				</span><br>
+				Black should win after 34 Qd2 Rg2 35 Be2 Bf5+ 36 Kc1 Qg1+ 37 Qd1 Qxh2, but with both players short of time and clearly 
+				suffering from the nervous tension, who knows what might have happened?<br>
+				<span>
+					34 ...&emsp;Rg2<br>
+					35 a6&emsp;Rxe2+<br>
+					36 Bxe2&emsp;Bf5+<br>
+					37 Kb3&emsp;Qe3+<br>
+					39 Ka2&emsp;Qxe2<br>
+					39 a7<br>
+				</span><br>
+				This pawn might have a chance of glory if the white king has more shelter. Alas...<br>
+				<span>
+					39 ...&emsp;Qc4+<br>
+					40 Ka1&emsp;Qf1+<br>
+					41 Ka2&emsp;Bb1+<br>
+					&emsp;&emsp;0-1<br>
+				</span><br>
+				42 Kb3 Qb5+ 43 Kc3 Qc5+ 44 Kb3 Bc2+ 45 Ka2 Qd5+ 46 b3 Qd2! and Black mates or wins the a-pawn.</p>
+			</div>
+		</div>
+	</main>
+
+	<!--Footer-->
+	<footer>
+		<nav class="navUl" id="footerNav">
+			<li><a href="home.html">Home</a>
+			<li><a href="directory.html">Directory</a>
+			<li><a>News</a>
+			<li><a href="faqs.html">FAQ's</a>
+			<li><a href="contacts.html">Contact Us</a>
+		</nav>
+	</footer>
+</Body>
+
+</HTML>

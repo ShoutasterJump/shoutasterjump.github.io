@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<HTML>
+<Head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ChessArchive</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="JavaScript/script.js" type="text/javascript"></script>
+	
+</Head>
+<Body>
+	
+	<!--Header-->
+	<header>
+		<p class="Title">ChessArchive</p>
+		<nav class="navUl" id="headerNav">
+			<li><a href="home.html">Home</a>
+			<li><a id="navActive" href="directory.html">Directory</a>
+			<li><a>News</a>
+			<li><a href="faqs.html">FAQ's</a>
+			<li><a href="contacts.html">Contact Us</a>
+		</nav>
+		<!--Search bar Not Yet Implemented-->
+		<div>
+			<input class="navSearch" type="text" placeholder="Search our Site here">
+		</div>
+	</header>
+
+	<!--Main area for Content-->
+	<main>
+		<div class="mainArea">
+			<h2 class="mainTitle">Chess Game Directory</h2>
+			<!--Search bar Not Yet Implemented-->
+			<form class="direcSearch">
+				<input class="direcSearchInput" type="text" placeholder="Search our Directory here!" name="direcSearch">
+				<button type="sumbit"><i class="fa fa-search"></i></button>
+			</form>
+			<p class="direcInfo">You can search our site by either finding the category you are looking for in the menus below, or by 
+			searching keywords in the search bar above. Please note that less is more in the Search bar, so try using openings, 
+			tournaments, player names or the year the game was played as the search.</p>
+			<!--Dropdown menu list-->
+			<div class="direcMenu">
+				<div onclick="showMenu(0)">
+					<button class="direcMenuButton">
+						<p>Search by Player's Name</p>
+						<i class="fa fa-chevron-down fa-lg" alt="chevron-down"></i>
+					</button>
+				</div>
+				<div id="players" class="direcMenuContent">
+					<ul class="direcResultsList">
+						<li><a href="game1.html">Viswanathan Anand</a></li>
+						<li><a href="home.html">Bai Jinshi</a></li>
+					</ul>
+					<ul class="direcResultsList"> 
+						<li><a href="home.html">Donald Byrne</a></li>
+						<li><a href="game1.html">Vladimir Kramnik</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="home.html">Robert Fischer</a></li>
+						<li><a href="home.html">Ding Liren</a></li>
+					</ul>
+				</div>
+				<div onclick="showMenu(1)">
+					<button class="direcMenuButton">
+						<p>Search by Openings</p>
+						<i class="fa fa-chevron-down fa-lg" alt="chevron-down"></i>
+					</button>
+				</div>
+				<div id="openings" class="direcMenuContent">
+					<ul class="direcResultsList">
+						<li><a href="home.html">Grunfeld Defence: Russian System</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="game`1.html">Queen's Gambit Declined: Semi-Slav Defence</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="home.html">Nimzo-Indian Defence 4.Nf3</a></li>
+					</ul>
+				</div>
+				<div onclick="showMenu(2)">
+					<button class="direcMenuButton">
+						<p>Search by Tournament</p>
+						<i class="fa fa-chevron-down fa-lg" alt="chevron-down"></i>
+					</button>
+				</div>
+				<div id="tournaments" class="direcMenuContent">
+					<ul class="direcResultsList">
+						<li><a href="home.html">Chinese Team Championship</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="home.html">Rosenwald, New York</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="game1.html">World Championship, Bonn</a></li>
+					</ul>
+				</div>
+				<div onclick="showMenu(3)">
+					<button class="direcMenuButton">
+						<p>Search by Year Played</p>
+						<i class="fa fa-chevron-down fa-lg" alt="chevron-down"></i>
+					</button>
+				</div>
+				<div id="years" class="direcMenuContent">
+					<ul class="direcResultsList">
+						<li><a href="home.html">1956</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="game1.html">2008</a></li>
+					</ul>
+					<ul class="direcResultsList">
+						<li><a href="home.html">2017</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<!--Footer-->
+	<footer>
+		<nav class="navUl" id="footerNav">
+			<li><a href="home.html">Home</a>
+			<li><a class="navActiveFooter" href="directory.html">Directory</a>
+			<li><a>News</a>
+			<li><a href="faqs.html">FAQ's</a>
+			<li><a href="contacts.html">Contact Us</a>
+		</nav>
+	</footer>
+</Body>
+
+</HTML>

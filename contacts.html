@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<HTML>
+<Head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ChessArchive</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</Head>
+<Body>
+	
+	<!--Header-->
+	<header>
+		<p class="Title">ChessArchive</p>
+		<nav class="navUl" id="headerNav">
+			<li><a href="home.html">Home</a>
+			<li><a href="directory.html">Directory</a>
+			<li><a>News</a>
+			<li><a href="faqs.html">FAQ's</a>
+			<li><a id="navActive" href="contacts.html">Contact Us</a>
+		</nav>
+		<!--Search bar Not Yet Implemented-->
+		<div>
+			<input class="navSearch" type="text" placeholder="Search our Site here">
+		</div>
+	</header>
+
+	<!--Main area for Content-->
+	<main>
+		<div class="mainArea">
+			<h2 class="contactQuestions">Want to be updated on newly added games?</h2>
+			<p class="contactText">If you want to be notified when we add new games, leave your email down below!</p>
+			<!--Form for email subscription - data not being recorded yet-->
+			<form class="Subscription">
+				<div class="subscriptionEmail">
+					<label for="email">Email:</label>
+					<input type="email" name="email" required>
+				</div>	
+				<input class="subscriptionButton" type="submit" value="Sign me up!">
+			</form>
+			<h2 class="contactQuestions">Think there a game we should add?</h2>
+			<p class="contactText">If you think there is a game that deserves to be added to our archive, please put all of the details 
+			of the game below, and we will look into it.</p>
+			<!--Form for suggesting new games - data not being recorded yet-->
+			<form class="gameSuggestion">
+				<div class="gameDescription">
+					<input type="number" id="Year" min="1880" max="2022" placeholder="Year" required>
+					<input type="text" id="playersSuggestion" placeholder="Player's Names like: White v Black" size="40" required>
+					<input type="text" id="Tournament" placeholder="Tournament name" required>
+				</div>
+				<textarea class="gameCode" type="text" placeholder="Insert the PGN here"></textarea><br>
+				<input class="suggestionButton" type="submit" value="Sumbit for review">
+			</form>
+			<h2 class="contactQuestions">Want to contact us?</h2>
+			<p class="contactText">If you want to reach us about anything else, our email is 
+			<a href=# class="faqLink">chessArchive@gmail.com</a>. We are always happy to talk to you about anything realted to our
+			website or chess as a whole.</p>
+		</div>
+	</main>
+	
+	<!--Footer-->
+	<footer>
+		<nav class="navUl" id="footerNav">
+			<li><a href="home.html">Home</a>
+			<li><a href="directory.html">Directory</a>
+			<li><a>News</a>
+			<li><a href="faqs.html">FAQ's</a>
+			<li><a class="navActiveFooter" href="contacts.html">Contact Us</a>
+		</nav>
+	</footer>
+</Body>
+
+</HTML>
